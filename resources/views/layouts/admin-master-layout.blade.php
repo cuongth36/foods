@@ -13,24 +13,24 @@
     <title>Quản lí Sạch Foods</title>
 
     <!-- Fontfaces CSS-->
-    <link href="{{ asset('admin/css/font-face.css') }}" rel="stylesheet" media="all">
-    <link href="{{ asset('admin/vendor/font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{ asset('admin/vendor/font-awesome-5/css/fontawesome-all.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{ asset('admin/vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/css/font-face.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/vendor/font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/vendor/font-awesome-5/css/fontawesome-all.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
-    <link href="{{ asset('admin/vendor/bootstrap-4.1/bootstrap.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/vendor/bootstrap-4.1/bootstrap.min.css')}}" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
-    <link href="{{ asset('admin/vendor/animsition/animsition.min.css')}}"\ rel="stylesheet" media="all">
-    <link href="{{ asset('admin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{ asset('admin/vendor/wow/animate.css')}}" rel="stylesheet" media="all">
-    <link href="{{ asset('admin/vendor/css-hamburgers/hamburgers.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{ asset('admin/vendor/slick/slick.css')}}" rel="stylesheet" media="all">
-    <link href="{{ asset('admin/vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{ asset('admin/vendor/perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/vendor/animsition/animsition.min.css')}}"\ rel="stylesheet" media="all">
+    <link href="{{ asset('admins/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/vendor/wow/animate.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/vendor/css-hamburgers/hamburgers.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/vendor/slick/slick.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/vendor/perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" media="all">
     <!-- Main CSS-->
-    <link href="{{ asset('admin/css/theme.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('admins/css/theme.css')}}" rel="stylesheet" media="all">
     <script src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
 
 </head>
@@ -121,7 +121,7 @@
                                     <a href="">Danh sách sản phẩm</a>
                                 </li>
                                 <li>
-                                    <a href="">Thêm sản phẩm</a>
+                                    <a href="{{ route('admin.products.add') }}">Thêm sản phẩm</a>
                                 </li>
                             </ul>
                         </li>
@@ -235,29 +235,29 @@
         CKEDITOR.replace( 'content' );
     </script>
     <!-- Jquery JS-->
-    <script src="{{ asset('admin/vendor/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{ asset('admins/vendor/jquery-3.2.1.min.js')}}"></script>
     <!-- Bootstrap JS-->
-    <script src="{{ asset('admin/vendor/bootstrap-4.1/popper.min.js')}}"></script>
-    <script src="{{ asset('admin/vendor/bootstrap-4.1/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('admins/vendor/bootstrap-4.1/popper.min.js')}}"></script>
+    <script src="{{ asset('admins/vendor/bootstrap-4.1/bootstrap.min.js')}}"></script>
     <!-- Vendor JS       -->
-    <script src="{{ asset('admin/vendor/slick/slick.min.js')}}">
+    <script src="{{ asset('admins/vendor/slick/slick.min.js')}}">
     </script>
-    <script src="{{ asset('admin/vendor/wow/wow.min.js')}}"></script>
-    <script src="{{ asset('admin/vendor/animsition/animsition.min.js')}}"></script>
-    <script src="{{ asset('admin/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')}}">
+    <script src="{{ asset('admins/vendor/wow/wow.min.js')}}"></script>
+    <script src="{{ asset('admins/vendor/animsition/animsition.min.js')}}"></script>
+    <script src="{{ asset('admins/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')}}">
     </script>
-    <script src="{{ asset('admin/vendor/counter-up/jquery.waypoints.min.js')}}"></script>
-    <script src="{{ asset('admin/vendor/counter-up/jquery.counterup.min.js')}}">
+    <script src="{{ asset('admins/vendor/counter-up/jquery.waypoints.min.js')}}"></script>
+    <script src="{{ asset('admins/vendor/counter-up/jquery.counterup.min.js')}}">
     </script>
-    <script src="{{ asset('admin/vendor/circle-progress/circle-progress.min.js')}}"></script>
-    <script src="{{ asset('admin/vendor/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
-    <script src="{{ asset('admin/vendor/chartjs/Chart.bundle.min.js')}}"></script>
-    <script src="{{ asset('admin/vendor/select2/select2.min.js')}}">
+    <script src="{{ asset('admins/vendor/circle-progress/circle-progress.min.js')}}"></script>
+    <script src="{{ asset('admins/vendor/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
+    <script src="{{ asset('admins/vendor/chartjs/Chart.bundle.min.js')}}"></script>
+    <script src="{{ asset('admins/vendor/select2/select2.min.js')}}">
     </script>
 
     <!-- Main JS-->
-    <script src="{{ asset('admin/js/main.js')}}"></script>
-    <script src="{{ asset('admin/js/action.js')}}"></script>
+    <script src="{{ asset('admins/js/main.js')}}"></script>
+    <script src="{{ asset('admins/js/action.js')}}"></script>
    
 </body>
 

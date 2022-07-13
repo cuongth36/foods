@@ -402,13 +402,17 @@ ol {
 }
 
 .header__top__right__auth {
-    display: inline-block;
+    display: inline-flex;
 }
 
 .header__top__right__auth a {
     display: block;
     font-size: 14px;
     color: #1c1c1c;
+}
+
+.header__top__right__auth a:first-child {
+   margin-right: 20px;
 }
 
 .header__top__right__auth a i {

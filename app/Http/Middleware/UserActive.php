@@ -17,10 +17,10 @@ class UserActive
     public function handle(Request $request, Closure $next)
     {
         // Kiểm tra user login có được quyền vào dashboad không
-        if ((auth()->user() && (auth()->user()->is_active == '0' || auth()->user()->role == '0') )) {
-            return redirect()->route('home.login');
+        if ((auth()->user() && auth()->user()->is_active == '1' && auth()->user()->role == '1' )) {
+            return $next($request);
         }
 
-        return $next($request);
+        return redirect()->route('home.login');
     }
 }

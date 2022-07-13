@@ -59,9 +59,9 @@ class LoginController extends Controller
             'password' => ['required'],
         ]);
         
-        if (Auth::attempt(['email' => $credentials['email'], 'password' => $credentials['password'], 'is_active' => '1'])) {
+        if (Auth::attempt(['email' => $credentials['email'], 'password' => $credentials['password'], 'is_active' => '1', 'is_role' => '1'])) {
             // Authentication was successful...
-            return redirect('admin/dashboard');
+            return redirect('admin');
         }
 
  
